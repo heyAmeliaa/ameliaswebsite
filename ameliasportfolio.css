@@ -1,0 +1,496 @@
+body{
+	font-family: 'Lora', serif;
+}
+
+/*Here is Homepage*/
+#navbar{
+	display: flex;
+	flex-direction: row;
+	align-items:end;
+	justify-content: space-between;
+}
+
+.logo{
+	justify-content: flex-start;
+	margin-left: 150px;
+}
+
+.navbox{
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	margin: 20px 150px 15px 0px;
+}
+
+.box{
+	padding:15px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;	
+	color: #333;
+}
+
+.navbox .box a {
+	color: #333 ;  /* I add this because the browser always override the color #333 */	
+}
+
+a:link{
+	text-decoration: none;
+	color:  #333;
+}
+
+a:hover{
+	text-decoration: overline underline 2px #333;
+	/* how to make the line far away from text?*/
+}
+
+a:active{
+	color: #333;
+}
+
+#landing{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 100px 200px 100px 150px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 45px;
+}
+
+.amelia{
+	font-size: 28px;
+	color: #333;
+}
+
+.UXD{
+	font-size: 18px;
+	color: gray;
+	font-style: italic;
+	padding-top: 10px;
+	color: #7f7f7f;
+}
+
+.value{
+	font-size: 48px;
+	text-align: left;
+	margin: 50px 0px 50px 0px;
+	color: #333;
+}
+
+.myphoto{
+	border-radius:50%;
+	padding-left: 200px;
+	padding-right: 30px;
+}
+
+.resumebutton{
+	background-color: white;
+	padding: 10px 30px 10px 30px;
+}
+
+#projects{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(10,100px);
+   gap: 30px;
+   margin-bottom: 100px;
+}
+
+.ProjectA{
+   grid-column: 1/ span 3;
+   grid-row: 1/span 4;
+}
+
+.ProjectA img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panote{
+   grid-column: 1/ span 3;
+   grid-row: 5/span 1;
+   display: flex;
+   flex-direction: column;
+   line-height: 30px;
+}
+
+.ProjectB{
+   grid-column: 4/ span 2;
+   grid-row: 1/span 4;
+}
+
+.ProjectB img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pbnote{
+   grid-column: 4/ span 2;
+   grid-row: 5/span 1;
+   display: flex;
+   flex-direction: column;
+   line-height: 30px;
+}
+
+.ProjectC{
+   grid-column: 1/ span 2;
+   grid-row: 6/span 4;
+}
+
+.pcnote{
+   grid-column: 1/ span 2;
+   grid-row: 10/span 1;
+   display: flex;
+   flex-direction: column;
+   line-height: 30px;
+}
+
+.ProjectC img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProjectD{
+   grid-column: 3/ span 3;
+   grid-row: 6/span 4;
+}
+
+.pdnote{
+   grid-column: 3/ span 3;
+   grid-row: 10/span 1;
+   display: flex;
+   flex-direction: column;
+   line-height: 30px;
+}
+
+.ProjectD img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projecttitle{
+	padding-left: 5px;
+	padding-bottom: 8px;
+	font-size:22px;
+	font-weight: 500;
+	color: #333;
+}
+
+.projectdescription{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	color: #333;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.tag{
+	background-color: #f4f4f4;
+	padding: 3px 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left:5px ;
+}
+
+#homepagefooter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	margin: 50px 150px 0px 150px;
+}
+
+.connect1{
+	font-size: 42px;
+	font-weight: 550;
+	padding-bottom: 25px;
+	padding-top: 50px;
+}
+
+.connect2{
+	padding-bottom: 50px;
+}
+
+.connect3{
+	padding-bottom: 10px;
+	color: #c5c3c6;
+	font-size: 14px;
+}
+
+
+/* Here is About Me*/
+#mybio{
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   margin: 100px 150px;
+}
+
+.biophoto{
+	border-radius: 5px;
+}
+
+.introduction{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between; /*not space between*/
+	margin-left:50px;
+	line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.myvalue{
+	font-size: 14px;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.about{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 120px;
+	font-weight:bolder;
+	line-height:1;
+	margin-bottom: 250px;
+}
+
+span{
+	font-style: italic;
+	font-weight: bold;
+}
+
+.biolist{
+	line-height: 25px;
+}
+
+.secondheading{
+	font-size: 58px;
+	font-weight: bolder;
+	margin-left: 150px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color:#dee2e6;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.mypro{
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-between;
+	padding: 10px 150px 50px 150px;
+}
+
+.title{
+	border-bottom-color: #333;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: white;
+	border-style: solid;
+	padding: 10px 300px 10px 10px;
+	font-weight: 550;
+}
+
+.prodetail{
+	line-height: 30px;
+	color:#7f7f7f ;
+	padding-left: 15px;
+}
+
+.university{
+	font-weight: 550;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	color:#333 ;
+}
+
+.major{
+	padding-bottom: 10px;
+	padding-left: 15px;
+	color:#7f7f7f ;
+}
+
+.section2{
+	margin-bottom:150px;
+}
+
+.tags{
+	display: flex;
+	flex-direction: row;
+	margin-left: 150px;
+}
+
+.tagme{
+	background-color: #f4f4f4;
+	padding: 5px 10px;
+	margin: 10px 5px 5px 5px;
+	border-radius: 5px;
+}
+
+#aboutmefooter{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	margin: 50px 150px 0px 150px;
+	border-top-color: #D9D9D9;
+	border-bottom-color: white;
+	border-left-color: white;
+	border-right-color: white;
+	border-style: solid;
+	border-width: 1px;
+}
+
+
+/* 
+Here is Gallery*/
+#partone{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 200px 100px;
+   margin: 150px 350px 50px 350px;
+   gap:30px;
+}
+
+.article{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.titleof{
+	font-size: 42px;
+	font-weight:bolder;
+	color: #dee2e6;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cover img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#parttwo{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px 100px;
+   margin-left: 350px;
+   margin-right: 350px;
+   margin-bottom: 200px;
+   gap: 30px;
+}
+
+.workpiece{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items:end;
+   text-align:end;
+}
+
+.gallery{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 150px 150px;
+   gap: 25px;
+}
+
+.gallerycover1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallerycover2{
+	background-color:purple;
+}
+
+#galleryfooter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+	color: #c5c3c6;
+	font-size: 14px;
+}
+
+/* Here is Contact*/
+.sayHello{
+	font-size: 84px;
+	font-weight: bolder;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.myimage{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.hereismyimage{
+	border-radius:50%;
+}
+
+#container2{
+	background-color:#f8f9fa;
+	margin: 50px 400px 0px 400px; /*how to define the margin by percentage*/
+	padding: 50px 50px 35px 50px;
+	border-radius: 20px;
+}
+
+.contactinfo{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	color: #7f7f7f;
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+input{
+	background-color: white;
+	font-family: 'Lora', serif;
+	border: 0px;
+	padding: 5px;
+	margin: 10px;
+	height: 40px;
+	width: 500px;
+}
+
+input::placeholder{
+	color: #7f7f7f;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.sendmessage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+
+.smbutton{
+	background-color: black;
+	font-size: 16px;
+	color: white;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+    font-family: 'Lora', serif;
+}
+
+
